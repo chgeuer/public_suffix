@@ -9,7 +9,7 @@ The Public Suffix List is fetched and compiled into pattern-matching function cl
 ```elixir
 def deps do
   [
-    {:public_suffix, "~> 0.1.0"}
+    {:public_suffix, github: "chgeuer/public_suffix" }
   ]
 end
 ```
