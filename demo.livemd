@@ -1,0 +1,21 @@
+# PublicSuffix
+
+```elixir
+Mix.install(
+    [
+        {:public_suffix, github: "chgeuer/public_suffix" }
+    ]
+)
+```
+
+## Section
+
+```elixir
+"chgeuer.blob.core.windows.net"
+|> PublicSuffix.parse(ignore_private: true)
+```
+
+```elixir
+"chgeuer.blob.core.windows.net"
+|> PublicSuffix.parse()
+```
